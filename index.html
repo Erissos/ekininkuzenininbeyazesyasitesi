@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karahan Beyaz Eşya | Sivas Tanıtım ve İletişim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0b3b2e', // Deep Pine
+                        accent: '#d28b2d',  // Warm Amber
+                        sand: '#f7f2ea',    // Soft Sand
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                        display: ['Fraunces', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); }
+        .service-card:hover .service-icon { transform: translateY(-5px) scale(1.1); }
+        .gradient-text { background: linear-gradient(135deg, #0b3b2e 0%, #145a46 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-sand text-slate-900 antialiased">
+
+    <div class="bg-primary text-white text-[12px] py-2 hidden md:block">
+        <div class="container mx-auto px-6 flex justify-between items-center opacity-80">
+            <div class="flex gap-6">
+                <span><i class="fas fa-map-marker-alt text-accent mr-2"></i> Sivas Merkez ve İlçeler</span>
+                <span><i class="fas fa-clock text-accent mr-2"></i> Pzt - Cmt: 09:00 - 19:30</span>
+            </div>
+            <div class="flex gap-4">
+                <a href="#contact" class="hover:text-accent transition">İletişim</a>
+                <a href="#services" class="hover:text-accent transition">Hizmetler</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="sticky top-0 z-50 glass-nav border-b border-slate-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-extrabold tracking-tight text-primary">KARAHAN <span class="text-accent">BEYAZ EŞYA</span></span>
+            </div>
+            
+            <div class="hidden lg:flex items-center gap-10 font-semibold text-sm uppercase tracking-wider">
+                <a href="#about" class="hover:text-accent transition">Hakkımızda</a>
+                <a href="#services" class="hover:text-accent transition">Hizmetler</a>
+                <a href="#process" class="hover:text-accent transition">Servis Süreci</a>
+                <a href="#contact" class="bg-primary text-white px-7 py-3 rounded-full hover:bg-[#0a2f25] transition shadow-lg shadow-emerald-900/20">İletişim</a>
+            </div>
+
+            <button class="lg:hidden text-2xl" id="mobile-toggle"><i class="fas fa-bars-staggered"></i></button>
+        </div>
+    </nav>
+
+    <section class="relative min-h-[85vh] flex items-center bg-white overflow-hidden">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-8">
+                <span class="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-bold tracking-widest uppercase">Sivas Beyaz Eşya Servisi</span>
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-primary leading-[1.1] font-display">
+                    Karahan Beyaz Eşya ile <br> <span class="gradient-text">Güvenli Servis Deneyimi.</span>
+                </h1>
+                <p class="text-lg text-slate-600 max-w-xl leading-relaxed">
+                    Sivas'ta beyaz eşya servis, bakım ve arıza tespiti için tanıtım ve iletişim odaklı bir hizmet sunuyoruz. Ürün satışı yapmıyoruz; amacımız hızlı erişim, net bilgilendirme ve doğru yönlendirme.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="https://wa.me/905000000000" class="px-8 py-4 bg-primary text-white rounded-xl font-bold flex items-center justify-center gap-3 hover:shadow-2xl transition-all">
+                        <i class="fab fa-whatsapp text-xl"></i> WhatsApp'tan Yazın
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-slate-200 rounded-xl font-bold hover:bg-slate-50 transition">
+                        Hızlı İletişim
+                    </a>
+                </div>
+                <div class="flex gap-8 pt-6 border-t border-slate-100">
+                    <div><h4 class="text-2xl font-bold text-primary">12+ Yıl</h4><p class="text-sm text-slate-400">Saha Deneyimi</p></div>
+                    <div><h4 class="text-2xl font-bold text-primary">Sivas</h4><p class="text-sm text-slate-400">Yerel Hizmet</p></div>
+                    <div><h4 class="text-2xl font-bold text-primary">7/24</h4><p class="text-sm text-slate-400">Talep Kaydı</p></div>
+                </div>
+            </div>
+            <div class="relative hidden lg:block">
+                <div class="absolute -right-20 -top-20 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
+                <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=900&q=80" 
+                     alt="Modern Kitchen" class="rounded-[2rem] shadow-2xl relative z-10 border-[12px] border-white">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-sand">
+        <div class="container mx-auto px-6 grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+            <div>
+                <span class="text-xs font-bold text-accent uppercase tracking-[0.35em]">Karahan Beyaz Eşya</span>
+                <h2 class="text-4xl font-extrabold text-primary mt-4 mb-6 font-display">Sivas'ta hızlı, güvenilir ve açık iletişimli servis.</h2>
+                <p class="text-slate-600 leading-relaxed mb-6">Ev tipi beyaz eşyalar için bakım, arıza tespiti ve yönlendirme hizmetleri veriyoruz. Tanıtım ve iletişim odaklı çalışıyoruz; ürün satışı ve mağaza satışı yapmıyoruz.</p>
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div class="p-5 bg-white rounded-2xl border border-slate-100">
+                        <p class="text-sm text-slate-500">Hizmet Bölgesi</p>
+                        <h4 class="text-lg font-bold text-primary">Sivas Merkez + İlçeler</h4>
+                    </div>
+                    <div class="p-5 bg-white rounded-2xl border border-slate-100">
+                        <p class="text-sm text-slate-500">Odak</p>
+                        <h4 class="text-lg font-bold text-primary">Servis, Bakım, Danışmanlık</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2.5rem] p-8 shadow-xl border border-slate-100">
+                <h3 class="text-2xl font-bold text-primary mb-6">Hızlı İletişim</h3>
+                <div class="space-y-5 text-slate-600">
+                    <p class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i> 0 (500) 000 00 00</p>
+                    <p class="flex items-center gap-3"><i class="fas fa-location-dot text-accent"></i> Sivas Merkez, Cumhuriyet Mah.</p>
+                    <p class="flex items-center gap-3"><i class="fas fa-clock text-accent"></i> Pzt - Cmt 09:00 - 19:30</p>
+                    <p class="text-xs text-slate-400">Not: Ürün satışı yapılmaz. Servis ve bilgilendirme amaçlıdır.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-4xl font-extrabold text-primary mb-4 font-display">Hizmetlerimiz</h2>
+                    <p class="text-slate-500">Sivas'ta beyaz eşya servis ihtiyaçlarınız için şeffaf bilgilendirme ve hızlı yönlendirme.</p>
+                </div>
+                <a href="#contact" class="text-accent font-bold hover:underline hidden md:block">İletişime Geç <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="service-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100 transition-all hover:shadow-xl group">
+                    <div class="service-icon w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 transition-all group-hover:bg-primary">
+                        <i class="fas fa-screwdriver-wrench text-2xl text-primary group-hover:text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Arıza Tespiti</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Buzdolabı, çamaşır makinesi, bulaşık makinesi ve fırınlar için hızlı arıza analizi.</p>
+                    <span class="text-xs font-bold text-accent uppercase tracking-widest">Servis Talebi</span>
+                </div>
+                <div class="service-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100 transition-all hover:shadow-xl group">
+                    <div class="service-icon w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 transition-all group-hover:bg-primary">
+                        <i class="fas fa-toolbox text-2xl text-primary group-hover:text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Bakım & Temizlik</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Periyodik bakım ile cihaz ömrünü uzatın, performansı koruyun.</p>
+                    <span class="text-xs font-bold text-accent uppercase tracking-widest">Bakım Kaydı</span>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100 transition-all hover:shadow-xl group">
+                    <div class="service-icon w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 transition-all group-hover:bg-primary">
+                        <i class="fas fa-plug-circle-check text-2xl text-primary group-hover:text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Kurulum & Montaj</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Yeni taşınma veya cihaz değişimlerinde doğru kurulum ve test.</p>
+                    <span class="text-xs font-bold text-accent uppercase tracking-widest">Kurulum Planla</span>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100 transition-all hover:shadow-xl group">
+                    <div class="service-icon w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 transition-all group-hover:bg-primary">
+                        <i class="fas fa-comments text-2xl text-primary group-hover:text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Danışmanlık</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Cihaz kullanımı, parça uyumluluğu ve servis süreci hakkında net bilgi.</p>
+                    <span class="text-xs font-bold text-accent uppercase tracking-widest">Bilgi Al</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="bg-primary rounded-[3rem] p-12 lg:p-20 relative overflow-hidden">
+                <div class="absolute right-0 bottom-0 w-1/3 h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+                <div class="relative z-10 max-w-3xl">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-white mb-8 font-display">Servis Sürecimiz net ve hızlı ilerler.</h2>
+                    <p class="text-slate-200 text-lg mb-10 leading-relaxed">İletişim, ön değerlendirme, servis planı ve bilgilendirme adımlarını açık şekilde yönetiriz. Amacımız cihazınızı güvenle kullanmanız için doğru yönlendirme sağlamaktır.</p>
+                    <div class="flex flex-wrap gap-6">
+                        <a href="tel:+90500000000" class="px-10 py-5 bg-accent text-primary rounded-2xl font-extrabold hover:scale-105 transition">Müşteri Hattı</a>
+                        <a href="#contact" class="px-10 py-5 border border-slate-700 text-white rounded-2xl font-extrabold hover:bg-slate-800 transition">Servis Talebi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-sand">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+                <h2 class="text-4xl font-extrabold text-primary mb-4 font-display">İletişim</h2>
+                <p class="text-slate-600 mb-8">Sivas'ta beyaz eşya servis ihtiyaçlarınız için bize ulaşın. Ürün satışı yapılmaz; sadece servis, bakım ve yönlendirme amaçlıdır.</p>
+                <div class="space-y-4 text-slate-700">
+                    <p class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i> 0 (500) 000 00 00</p>
+                    <p class="flex items-center gap-3"><i class="fab fa-whatsapp text-accent"></i> 0 (500) 000 00 00</p>
+                    <p class="flex items-center gap-3"><i class="fas fa-location-dot text-accent"></i> Sivas Merkez, Cumhuriyet Mah. No: 12</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-slate-100 pt-20 pb-10">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="w-8 h-8 bg-primary flex items-center justify-center rounded-md text-accent font-bold">K</div>
+                    <span class="text-xl font-bold text-primary">KARAHAN BEYAZ EŞYA</span>
+                </div>
+                <p class="text-slate-500 text-sm leading-relaxed">Sivas'ta beyaz eşya servis ve bakım ihtiyaçlarınız için tanıtım ve iletişim odaklı bir servis noktasıyız. Ürün satışı yapılmaz.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-primary mb-6">Kurumsal</h4>
+                <ul class="text-slate-500 text-sm space-y-4">
+                    <li><a href="#about" class="hover:text-accent transition">Hakkımızda</a></li>
+                    <li><a href="#services" class="hover:text-accent transition">Hizmetler</a></li>
+                    <li><a href="#process" class="hover:text-accent transition">Servis Süreci</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-primary mb-6">İletişim</h4>
+                <ul class="text-slate-500 text-sm space-y-4">
+                    <li><a href="tel:+90500000000" class="hover:text-accent transition">0 (500) 000 00 00</a></li>
+                    <li><a href="mailto:info@karahanbeyazesya.com" class="hover:text-accent transition">info@karahanbeyazesya.com</a></li>
+                    <li><a href="#contact" class="hover:text-accent transition">İletişim Formu</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-primary mb-6">Çalışma Saatleri</h4>
+                <p class="text-slate-500 text-sm mb-4">Pzt - Cmt: 09:00 - 19:30</p>
+                <div class="flex gap-2">
+                    <a href="https://wa.me/905000000000" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-2">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="tel:+90500000000" class="bg-accent text-primary px-4 py-2 rounded-lg text-sm font-bold">Ara</a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 pt-8 border-t border-slate-50 text-center">
+            <p class="text-slate-400 text-xs uppercase tracking-widest">&copy; 2026 Karahan Beyaz Eşya Sivas. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-8 right-8 z-50 flex flex-col gap-4">
+        <a href="https://wa.me/905000000000" class="w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl flex items-center justify-center text-3xl hover:scale-110 transition-all" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle logic
+        const toggle = document.getElementById('mobile-toggle');
+        // İhtiyaca göre eklenebilir
+    </script>
+</body>
+</html>
